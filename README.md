@@ -1,6 +1,6 @@
 # Hi, I'm Dhev 👋
 
-I'm a Machine Learning Engineer and M.S. Computer Science student at UMass Amherst (GPA: 4.0, graduating May 2027), specializing in Reinforcement Learning and Systems for Data Science. I build production AI systems end-to-end — from unsupervised anomaly detection pipelines and RAG-powered LLM agents to distributed ML systems at scale — and I validate them rigorously enough to publish: two peer-reviewed papers in medical imaging AI (Frontiers in Radiology 2025, Springer ICAECT 2024). I'm AWS Certified Solutions Architect, have shipped systems to public cloud deployments, and I'm available for Summer 2026 internships in AI/ML and Software Engineering.
+I'm a Machine Learning Engineer and M.S. Computer Science student at UMass Amherst (GPA: 4.0, graduating May 2027). I've shipped production AI systems from scratch — a RAG-powered log intelligence platform, a live agentic research agent, and a distributed ML pipeline over 1M+ flight records — and held the work to a standard rigorous enough to publish twice: peer-reviewed papers in medical imaging AI in Frontiers in Radiology (2025) and Springer ICAECT (2024). I'm an AWS Certified Solutions Architect with end-to-end experience across model development, backend infrastructure, and cloud deployment. I'm actively looking for Summer 2026 AI/ML and Software Engineering internships where I can build things that ship.
 
 ---
 
@@ -20,17 +20,7 @@ I'm a Machine Learning Engineer and M.S. Computer Science student at UMass Amher
 - **Production backends** — async FastAPI microservices, Docker, Redis, PostgreSQL, deployed to cloud
 - **Applied research** — NRIQA for LDCT imaging (Frontiers in Radiology 2025), cataract detection (Springer ICAECT 2024)
 
----
-
-## 🛠 Tech Stack
-
-**Languages:** Python, SQL, JavaScript, TypeScript  
-**AI / LLM:** Llama 3, OpenAI API, RAG pipelines, vector embeddings, prompt engineering, Ollama, LangChain, Hugging Face Transformers  
-**ML / Data:** PyTorch, TensorFlow, scikit-learn, XGBoost, NumPy, Pandas, SHAP, OpenCV, TF-IDF, Isolation Forest, DBSCAN  
-**Distributed:** Apache Spark, PySpark, Spark MLlib, Databricks, Parquet  
-**Backend:** FastAPI, PostgreSQL, pgvector, Redis, Celery, SQLAlchemy, REST APIs, microservices  
-**Frontend:** Next.js, React, Tailwind CSS, Chart.js  
-**Cloud & Tools:** Docker, Docker Compose, GCP (T4 GPU), AWS (Certified Solutions Architect), Supabase, Git  
+**Languages:** Python · SQL · JavaScript · TypeScript
 
 ---
 
@@ -53,14 +43,14 @@ A live agentic system that concurrently scrapes the web, extracts structured fac
 ### [GauntletAgent — Heads-Up Limit Texas Hold'em AI](https://github.com/Dhevdharsan)
 `Python` `Alpha-Beta Minimax` `Q-Learning` `Genetic Algorithm` `Monte Carlo`
 
-A poker-playing AI agent built on a 6-stage decision pipeline: precomputed preflop hand tables, time-bounded Monte Carlo post-flop evaluation, opponent profiling across 5 behavioral styles (maniac → calling station), a 3-tier bluff layer (semi-bluff, slow play, river bluff), and depth-3 Alpha-Beta Minimax search with profile-weighted opponent nodes instead of worst-case assumptions. Weights were trained in two phases — Q-Learning for initial policy (self-play across 3 difficulty tiers) then a Genetic Algorithm over a 4-opponent Gauntlet to escape a local optimum and converge to a tight-aggressive (TAG) profile that folds under pressure and values strong hands heavily.
+A poker-playing AI agent built on a 6-stage decision pipeline: precomputed preflop hand tables, time-bounded Monte Carlo post-flop evaluation, opponent profiling across 5 behavioral styles (maniac → calling station), a 3-tier bluff layer (semi-bluff, slow play, river bluff), and depth-3 Alpha-Beta Minimax search with profile-weighted opponent nodes instead of worst-case assumptions. Weights were trained in two phases — Q-Learning for initial policy across 3 difficulty tiers, then a Genetic Algorithm over a 4-opponent Gauntlet to escape a local optimum and converge to a tight-aggressive profile that folds under pressure and values strong hands heavily.
 
 ---
 
 ### [Smart Expense Analyzer](https://github.com/Dhevdharsan)
 `Python` `FastAPI` `Next.js` `Celery` `Redis` `Supabase` `XGBoost` `Hugging Face` `LangChain` `Tesseract` `Chart.js`
 
-A full-stack AI-powered expense tracking app built for the UMass Five College community (CS 520, Spring 2026) that eliminates manual receipt entry through an event-driven asynchronous pipeline: Tesseract OCR extracts merchant, amount, and date from uploaded receipt images, facebook/bart-large-mnli zero-shot classifies each expense into one of 10 categories, and XGBoost forecasts next-month spend with burnout probability using lag features and a sigmoid function. The API gateway returns HTTP 202 in under 200ms by offloading all OCR and NLP computation to a Celery/Redis worker, with Supabase Realtime pushing processing status to the client; the analytics dashboard (Chart.js line + doughnut charts) and a LangChain natural language query interface complete the experience, backed by 46 automated tests at 63% backend coverage.
+A full-stack AI-powered expense tracking app built for the UMass Five College community (CS 520, Spring 2026) that eliminates manual receipt entry through an event-driven asynchronous pipeline: Tesseract OCR extracts merchant, amount, and date from uploaded receipt images; facebook/bart-large-mnli zero-shot classifies each expense into one of 10 categories; XGBoost forecasts next-month spend with burnout probability using lag features and a sigmoid function. The API gateway returns HTTP 202 in under 200ms by offloading all OCR and NLP computation to a Celery/Redis worker, with Supabase Realtime pushing status to the client — backed by 46 automated tests at 63% backend coverage.
 
 ---
 
