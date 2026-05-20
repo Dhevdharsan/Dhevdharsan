@@ -1,6 +1,6 @@
 # Hi, I'm Dhev 👋
 
-I'm a Machine Learning Engineer and M.S. Computer Science student at UMass Amherst (GPA: 4.0, graduating May 2027). I've shipped production AI systems from scratch — a RAG-powered log intelligence platform, a live agentic research agent, and a distributed ML pipeline over 1M+ flight records — and held the work to a standard rigorous enough to publish twice: peer-reviewed papers in medical imaging AI in Frontiers in Radiology (2025) and Springer ICAECT (2024). I'm an AWS Certified Solutions Architect with end-to-end experience across model development, backend infrastructure, and cloud deployment. I'm actively looking for Summer 2026 AI/ML and Software Engineering internships where I can build things that ship.
+I am a machine learning engineer and M.S. CS student at UMass Amherst, graduating May 2027 with a 4.0. I build machine learning systems end to end and care enough about the work to have published it twice, both in medical imaging AI (Frontiers in Radiology 2025, Springer ICAECT 2024). Outside of research, I spend most of my time shipping real systems: RAG pipelines, agentic research agents, distributed ML at scale, because I think the gap between a working prototype and something that actually runs in production is where most of the interesting engineering happens. AWS Certified Solutions Architect, and always looking for problems worth solving.
 
 ---
 
